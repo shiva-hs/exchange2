@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Sans;
+  src:url('Font/Iranian\ Sans.ttf') format(truetype);
+}
+
+:root {
+  --font-family: Sans;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-family: var(--font-family);
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.greenchangeRate{
+  color:white;
+  background-color: green;
+
+}
+
+.redchangeRate{
+  color: white;
+  background-color: red;
+  border-radius:10 ;
+}
+
+.greenchangePrice{
+  color:green;
+}
+
+.redchangePrice{
+  color: red;
+}
+
+.rounded-full{
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px;
+}
